@@ -10,15 +10,13 @@ import { rootReducer, IAppState } from './reducers';
 
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
-
-// interface IAppState {
-//   counter?: number;
-// }
+import { ButtonComponent } from './button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CounterComponent
+    CounterComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
