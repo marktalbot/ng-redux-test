@@ -1,1 +1,4 @@
-<button (click)="toggle()">Click</button>
+<button (click)="toggle()">Click to Toggle</button>
+<div *ngIf="show$ | async">
+  Toggle Content
+</div>
