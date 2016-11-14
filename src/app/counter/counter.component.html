@@ -3,4 +3,4 @@
 </p>
 <button (click)="increment()" class="btn btn-default">+</button>
 <button (click)="decrement()" class="btn btn-default">-</button>
-<p>Count: <span>(check the console)</span></p>
+<p>Count: <span>{{ counter$ | async }}</span></p>

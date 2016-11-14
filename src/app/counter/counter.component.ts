@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NgRedux } from 'ng2-redux';
-// import { rootReducer } from './reducers/counter-reducer';
+import { select } from 'ng2-redux';
+import { Observable } from 'rxjs';
 
 
 
@@ -13,6 +14,10 @@ import { NgRedux } from 'ng2-redux';
 })
 export class CounterComponent implements OnInit {
 
+    // This selects `counter` from the store and attaches it to this property
+    // it uses the property name to select, and ignores the $ from it.
+    @select() counter$;
+    
     constructor(private redux: NgRedux<any>) {}
 
     increment() {

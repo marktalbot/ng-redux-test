@@ -11,6 +11,8 @@ import { Observable } from 'rxjs';
 })
 export class ButtonComponent {
     
+    // This selects `button` from the store and attaches it 
+    // to the show$ property.
     @select('button') show$: Observable<boolean>;
     
     constructor(private redux: NgRedux<any>) {}
