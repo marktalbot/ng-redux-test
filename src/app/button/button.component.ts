@@ -20,6 +20,7 @@ export class ButtonComponent {
 
     toggle() {
         this.redux.dispatch({ type: ButtonActions.TOGGLE });
+        console.log('button toggle...', this.redux.getState());
     }
 
 }
