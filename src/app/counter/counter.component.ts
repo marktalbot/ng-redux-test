@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 import { select } from 'ng2-redux';
 import { Observable } from 'rxjs';
-import { CounterActions } from '../actions/counter-actions';
+import { CounterActions } from '../actions/counter.actions';
 
 @Component({
     selector: 'app-counter',

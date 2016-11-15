@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { NgRedux } from 'ng2-redux';
 import { select } from 'ng2-redux';
 import { Observable } from 'rxjs';
-import { ButtonActions } from '../actions/button-actions';
+import { ButtonActions } from '../actions/button.actions';
 
 @Component({
   selector: 'app-button',

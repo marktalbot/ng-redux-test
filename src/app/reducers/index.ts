@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import counterReducer from './counter-reducer';
-import buttonReducer from './button-reducer';
+import counterReducer from './counter.reducer';
+import buttonReducer from './button.reducer';
 
 // Sets the type of the inital state for each store
 export class IAppState {
