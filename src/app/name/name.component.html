@@ -1,0 +1,8 @@
+<div>
+  <p>
+    name works!
+  </p>
+  <p>Your name is: {{ name$ | async }}</p>
+  <input #name (keyup.enter)="save(name.value)" type="text" placeholder="enter name">
+  <button (click)="save(name.value)">Save</button>
+</div>

@@ -11,12 +11,14 @@ import { rootReducer, IAppState } from './reducers';
 import { AppComponent } from './app.component';
 import { CounterComponent } from './counter/counter.component';
 import { ButtonComponent } from './button/button.component';
+import { NameComponent } from './name/name.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
-    ButtonComponent
+    ButtonComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,
