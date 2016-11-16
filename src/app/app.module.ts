@@ -13,6 +13,9 @@ import { CounterComponent } from './counter/counter.component';
 import { ButtonComponent } from './button/button.component';
 import { NameComponent } from './name/name.component';
 
+// NG bootstrap
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,8 @@ import { NameComponent } from './name/name.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgReduxModule.forRoot()
+    NgReduxModule.forRoot(),
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
